@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('./assets/fonts/Poppins-Bold.ttf');
+    font-family: 'Poppins-BoldItalic';
+    src: url('./assets/fonts/Poppins-BoldItalic.ttf');
+    font-family: 'Poppins-ExtraBold';
+    src: url('./assets/fonts/Poppins-ExtraBold.ttf');
+    font-family: 'Poppins-ExtraBoldItalic';
+    src: url('./assets/fonts/Poppins-ExtraBoldItalic.ttf');
+    font-family: 'Poppins-Italic';
+    src: url('./assets/fonts/Poppins-Italic.ttf');
+    font-family: 'Poppins-Regular';
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+
+.card {
+    background-color: white;
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px 10px 60px 10px;
+    padding: 55px;
+}
+
+.top-row {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#day {
+    grid-row: 2/3;
+}
+
+#month {
+    grid-row: 2/3;
+}
+
+label {
+    font-family: 'Poppins-Regular';
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: hsl(0, 1%, 44%);
+}
+
+input {
+    padding: 10px;
+    width: 55%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 32px;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 600;
+    color: black;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+input:hover {
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+hr {
+    margin: 30px 0;
+    height: 1px;
+    background-color: hsl(0, 0%, 86%);
+    border: none;
+}
+
+img {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 10px;
+    width: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 37%;
+    left: 90%;
+    cursor: pointer;
+}
+
+img:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+p {
+    font-family: 'Poppins-Italic', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    
+}
+
+span {
+    letter-spacing: 2px;
+    color: hsl(259, 100%, 65%);
+}
+
+.errorRow {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 10px;
+    color: hsl(0, 100%, 67%);
+    letter-spacing: 1px;
+    font-family: 'Poppins-Regular';
+}
+
+.errorRow span {
+    color: hsl(0, 100%, 67%);
+    letter-spacing: 1px;
+    font-family: 'Poppins-Regular';
+}
+
+@media screen and (max-width: 375px) {
+
+    .card {
+        width: 60%;
+        height: 60%;
+    }
+
+    img {
+        left: 50%;
+    }
+
+    p {
+        font-size: 38px;
+    }
+}
